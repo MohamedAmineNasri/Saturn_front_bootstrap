@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("../open-sans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../open-sans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../Lato/Lato-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.navbar .navbar-collapse {
+  justify-content: center;
+}
+.navbar .navbar-brand {
+  font-size: 27px;
+  font-family: "OpenSans";
+  font-weight: bold;
+}
+.navbar .navbar-nav {
+  gap: 20px;
+}
+.navbar .navbar-nav li {
+  font-size: 15px;
+  font-family: "Lato";
+  font-weight: bold;
+}
+.navbar .navbar-nav li a {
+  color: #b6b6b6 !important;
+}
+.navbar .navbar-nav li:first-child a {
+  color: #e85f37 !important;
+}
+
+.section-one,
+.section-two,
+.section-three {
+  max-width: fit-content;
+}
+.section-one h3,
+.section-two h3,
+.section-three h3 {
+  position: relative;
+  font-size: 22px;
+  font-family: "Lato";
+  font-weight: bold;
+}
+.section-one h3::after, .section-one h3::before,
+.section-two h3::after,
+.section-two h3::before,
+.section-three h3::after,
+.section-three h3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-image: url("../assets/Separator.png");
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+.section-one h3::before,
+.section-two h3::before,
+.section-three h3::before {
+  margin-top: -30px;
+}
+.section-one h3::after,
+.section-two h3::after,
+.section-three h3::after {
+  margin-top: 30px;
+}
+.section-one p,
+.section-two p,
+.section-three p {
+  max-width: 40.625rem;
+  color: #535353;
+  font-family: "OpenSans";
+  font-weight: normal;
+  font-size: 15px;
+}
+.section-one .btn-outline-orange,
+.section-two .btn-outline-orange,
+.section-three .btn-outline-orange {
+  border-color: #e85f37;
+  color: #e85f37;
+  font-family: "OpenSans";
+  font-weight: bold;
+  font-size: 13px;
+}
+.section-one .btn-outline-orange:hover,
+.section-two .btn-outline-orange:hover,
+.section-three .btn-outline-orange:hover {
+  background-color: #e85f37;
+  color: white;
+}
+.section-one .tag,
+.section-two .tag,
+.section-three .tag {
+  font-family: "OpenSans";
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 25px;
+  margin-bottom: 85px;
+}
+.section-one .separator,
+.section-two .separator,
+.section-three .separator {
+  display: block;
+  margin-top: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */

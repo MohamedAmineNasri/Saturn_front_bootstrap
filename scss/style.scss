@@ -1,0 +1,108 @@
+@use 'variables' as *;
+@font-face {
+    font-family: "OpenSans";
+    src: url("../open-sans/OpenSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../open-sans/OpenSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../Lato/Lato-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../Lato/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar {
+    .navbar-collapse {
+        justify-content: center;
+    }
+    .navbar-brand {
+        font-size: 27px;
+        font-family: "OpenSans";
+        font-weight: bold;
+    }
+    .navbar-nav {
+        gap: 20px;
+        li {
+            font-size: 15px;
+            font-family: "Lato";
+            font-weight: bold;
+            a{
+                color: $nav-link !important;
+            }
+        }
+        li:first-child a {
+        color: $primary-color !important;
+        }
+    }
+}
+    .section-one,
+    .section-two,
+    .section-three {
+    max-width: fit-content;
+    h3 {
+        position: relative;
+        font-size: 22px;
+        font-family: "Lato";
+        font-weight: bold;
+        &::after,
+        &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background-image: url("../assets/Separator.png");
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+        }
+        &::before {
+        margin-top: -30px;
+        }
+        &::after {
+        margin-top: 30px;
+        }
+    }
+    p {
+        max-width: 40.625rem;
+        color: $paragraph;
+        font-family: "OpenSans";
+        font-weight: normal;
+        font-size: 15px;
+    }
+    .btn-outline-orange {
+        border-color: $primary-color;
+        color: $primary-color;
+        font-family: "OpenSans";
+        font-weight: bold;
+        font-size: 13px;
+        &:hover {
+        background-color: $primary-color;
+        color: white;
+        }
+    }
+    .tag {
+        font-family: "OpenSans";
+        font-weight: normal;
+        font-size: 12px;
+        margin-top: 25px;
+        margin-bottom: 85px;
+    }
+    .separator {
+        display: block;
+        margin-top: 25px;
+    }
+    }
